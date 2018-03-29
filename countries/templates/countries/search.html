@@ -1,0 +1,8 @@
+{% extends "countries/base.html" %}
+{% block title %}Filtro{% endblock %}
+{% block content %}
+    <h1>Filtro</h1>
+    {% for country in object_list %}
+        {% include "countries/country.html" %}
+    {% endfor %}
+{% endblock %}

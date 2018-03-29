@@ -1,0 +1,9 @@
+ <h1>Name: {{ country.name|title }}</h1>
+ <p>Code: {{ country.code }}</p>
+
+ {% if country.name == 'Colombia' %}
+     <p>Tierra querida</p>
+ {% endif %}
+
+ <p><a href="{% url "country_id_detail" pk=country.id %}">Ir a detalle</a></p>
+ <br>

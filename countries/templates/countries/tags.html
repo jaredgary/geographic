@@ -1,0 +1,14 @@
+{% extends "countries/base.html" %}
+{% block title %}Tags{% endblock %}
+{% block content %}
+    <h1>Tags</h1>
+    {% for country in countries %}
+        {% include "countries/country.html" %}
+    {% endfor %}
+    <p>lorem: {% lorem %}</p>
+    <p>Fecha actual: {% now "Y-m-d" %}</p>
+    {% filter force_escape|lower %}
+        %$#TEXTO
+    {% endfilter %}
+
+{% endblock %}

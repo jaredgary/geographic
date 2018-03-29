@@ -1,0 +1,8 @@
+{% extends "countries/base.html" %}
+{% block title %}Detail ID{% endblock %}
+{% block content %}
+    <h1>Country Detail ID</h1>
+
+    {% include "countries/country.html" with country=object %}
+
+{% endblock %}
